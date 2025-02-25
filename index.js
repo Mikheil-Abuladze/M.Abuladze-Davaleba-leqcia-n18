@@ -14,6 +14,21 @@ function discountPrice(a, b) {
   result = a * (1 - b / 100);
   return result;
 }
-console.log(discountPrice(300, 10));
+console.log(discountPrice(270, 10));
 
 // ==========================
+
+function getCurrencySymbol(currency) {
+  if (currency === "GEL") {
+    return "₾"; // Georgian Lari
+  } else if (currency === "USD") {
+    return "$"; // US Dollar
+  } else if (currency === "EUR") {
+    return "€"; // Euro
+  } else {
+    return "Currency not supported";
+  }
+}
+
+// Example usage:
+console.log(getCurrencySymbol("EUR")); // Outputs: ₾
