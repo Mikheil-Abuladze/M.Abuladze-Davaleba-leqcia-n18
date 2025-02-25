@@ -9,3 +9,11 @@ function testNum(a) {
 console.log(testNum(10));
 
 // ==========================
+
+function discountPrice(a, b) {
+  result = a * (1 - b / 100);
+  return result;
+}
+console.log(discountPrice(300, 10));
+
+// ==========================
