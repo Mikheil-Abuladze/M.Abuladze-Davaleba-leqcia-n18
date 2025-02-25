@@ -18,17 +18,23 @@ console.log(discountPrice(270, 10));
 
 // ==========================
 
-function getCurrencySymbol(currency) {
+function getCurrencySymbolFromCode(currency) {
   if (currency === "GEL") {
-    return "₾"; // Georgian Lari
+    return "₾";
   } else if (currency === "USD") {
-    return "$"; // US Dollar
+    return "$";
   } else if (currency === "EUR") {
-    return "€"; // Euro
+    return "€";
   } else {
     return "Currency not supported";
   }
 }
 
-// Example usage:
-console.log(getCurrencySymbol("EUR")); // Outputs: ₾
+console.log(getCurrencySymbolFromCode("GEL"));
+// ==========================
+function toLowerCaseString(input) {
+  return input.toLowerCase();
+}
+
+console.log(toLowerCaseString("I NEED MONEY"));
+// ==========================
