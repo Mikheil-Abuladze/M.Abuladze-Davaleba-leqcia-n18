@@ -2438,3 +2438,14 @@ const items = [
 console.log(getLowestPriceItem(items));
 
 //=====================================
+
+function findElementByTitle(array, searchString) {
+  return array.find((element) => element.title === searchString);
+}
+const staff = [
+  { title: "Item A", description: "Description of Item A" },
+  { title: "Item B", description: "Description of Item B" },
+  { title: "Item C", description: "Description of Item C" },
+];
+
+console.log(findElementByTitle(staff, "Item C"));
